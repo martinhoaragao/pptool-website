@@ -41,6 +41,9 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#abstract">Abstract</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#architecture">architecture</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#articles">Articles</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
@@ -83,6 +86,25 @@
               <i class="fa fa-download mr-2"></i>
               Source Code
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Grid Section -->
+    <section class="architecture" id="architecture">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Architecture</h2>
+        <hr class="star-dark mb-5">
+        <p class="lead text-justify">
+          The programmer’s Java source code is loaded as PP input. Then, the code goes through two static analysis processes: the analyser implemented (PP-Analyser) using AnTLR with the goal of extracting a set of metrics and the PMD-Analyser, an analyser that resorts to the PMD Tool to find a set of predefined metrics regarding poor coding practices.
+        </p>
+        <p class="lead text-justify">
+          Both analysis’ outcomes feed two other modules: A Metrics Visualizer (a generator of HTML pages 5) which will allow us to make a manual assessment of the source code to infer the programmer’s profile; and a Profile Inference Engine whose goal is to make the profile assignment an automatic process.
+        </p>
+        <div class="row">
+          <div class="offset-3 col-sm-6">
+            <img class="img-responsive mw-100 mx-auto" src="/img/architecture.png"/>
           </div>
         </div>
       </div>
